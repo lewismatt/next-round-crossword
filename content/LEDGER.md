@@ -32,7 +32,8 @@ collide and nothing is double-counted. The authoring spec is
 ## Library status
 
 *As of the extraction, 2026-10-26: **3 puzzles** banked, all
-import-ready in `content/`.*
+import-ready in `content/`. Drafts in `content/contributions/`:
+**6** (see the 2026-10-26 entry below).
 
 | File | Title | Difficulty | Identity (SHA-256) | Status |
 | --- | --- | --- | --- | --- |
@@ -54,3 +55,25 @@ import-ready in `content/`.*
   (merged 2026-10-21) and carried byte-identical into this
   repository at extraction; identities and raw-file digests are
   pinned by `src/bundled-content.test.ts`.
+
+### Six minis — larry (drafted 2026-10-26)
+
+- **Ghost Story** (5x5, easy, identity `d78fed81…`),
+  **Fresh Start** (5x5, easy, `0d8bc105…`),
+  **House of Cards** (5x5, easy, `8d48ab18…`),
+  **In the Garden** (5x5, easy, `65613798…`),
+  **Honor System** (5x5, medium, `321876f2…`),
+  **Road Trip** (5x5, medium, `47c88ddc…`). Drafted by Larry at
+  Matthew's request ("generate 6 more crosswords"). Fills were
+  produced by a wordlist-constrained search over the
+  public-domain google-10000-english frequency list and then
+  hand-screened entry by entry: common words only, no
+  abbreviations or initialisms; the single proper noun is ESSEX
+  (an English county) in Road Trip. All clues were written by the
+  drafter for these grids. Validator PASS on all six templates.
+  Status: **Drafted — in review**. Banking awaits the D54 gates
+  with the author of record: editorial review, correctness
+  review, clean cold playtest, written CC0-1.0 attestation.
+  Import JSONs deliberately not generated — the validator's
+  `--write` rights block asserts attestation, so JSONs are
+  emitted at banking time (the launch-puzzle precedent).
