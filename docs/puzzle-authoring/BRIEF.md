@@ -22,16 +22,16 @@ completed these gates on 2026-10-21.*
 
 ## The deliverable
 
-One authoring template per puzzle, plus the import JSON the
-validator generates from it:
+One authoring template per puzzle:
 
 - Template: `content/contributions/<your-tag>-<slug>.md`, in the
   format of `docs/puzzle-authoring/puzzle-template.md` (worked
   example: `docs/puzzle-authoring/example.md`).
-- Import document: run
-  `python3 tools/validate_puzzle.py content/contributions/<your-tag>-<slug>.md --write`
-  and submit the generated `.json` beside the template. Its shape is
-  format `next-round.crossword/1`:
+- Import document: **not** part of a contribution. The validator's
+  `--write` output carries a rights block asserting the author of
+  record's attestation, so the reviewer generates the
+  `next-round.crossword/1` JSON only when a gated puzzle is banked.
+  Its shape, for reference:
 
 ```json
 {

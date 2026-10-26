@@ -25,9 +25,11 @@ That is a **puzzle contribution**. Do exactly this, in order:
    carries a placeholder like `YOURTAG`, ask the user for the
    lowercase contributor tag before writing anything.)
 4. Run the validator on every draft and make it pass:
-   `python3 tools/validate_puzzle.py content/contributions/<your-tag>-<slug>.md --write`
-   The `--write` emits the matching `.json` import document beside
-   the template; submit both files.
+   `python3 tools/validate_puzzle.py content/contributions/<your-tag>-<slug>.md`
+   Do **not** use `--write`, and do not submit a `.json`: the import
+   document's rights block asserts the author of record's
+   attestation, so the reviewer generates it only when a gated
+   puzzle is banked. Your deliverable is the template alone.
 5. Self-review before you report back: solve every clue against the
    fill yourself; check every entry is clued exactly once, every
    answer matches the grid, every letter is crossed, and the clues
@@ -57,7 +59,7 @@ reviewer change it.
 ### The flow, end to end
 
 ```
-generate → draft templates (+ generated JSON) in content/contributions/
+generate → draft templates in content/contributions/
          → validator PASS (you run it)
          → reviewer review: grid/clue correctness, clue originality,
            dedupe against the library (grid identity)

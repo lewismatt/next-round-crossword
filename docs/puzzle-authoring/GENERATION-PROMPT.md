@@ -28,7 +28,7 @@ BEFORE YOU WRITE ANYTHING
    already in the library. Your grids must not repeat any of them;
    a puzzle's identity is its grid.
 
-DELIVERABLE — one template + one generated JSON per puzzle
+DELIVERABLE — one authoring template per puzzle
 - Template path: content/contributions/{TAG}-{SLUG}.md, in the
   format of docs/puzzle-authoring/puzzle-template.md (worked
   example: docs/puzzle-authoring/example.md).
@@ -42,9 +42,9 @@ DELIVERABLE — one template + one generated JSON per puzzle
   Fill: real, common words only — no abbreviation soup, fragments,
   or obscure proper nouns. Clues: your own words, clueing the
   meaning; nothing copied or adapted from published puzzles.
-- Generate the import JSON:
-    python3 tools/validate_puzzle.py content/contributions/{TAG}-{SLUG}.md --write
-  and submit the generated .json beside the template.
+- Do NOT generate an import JSON (no --write): its rights block
+  asserts an attestation that has not happened. The reviewer
+  generates it at banking time, after the D54 gates.
 
 VALIDATE BEFORE YOU REPORT
 Run the validator (without --write) on every template; fix
